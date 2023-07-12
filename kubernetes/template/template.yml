@@ -23,7 +23,7 @@ spec:
       containers: 
         - 
           name: "front"
-          image: "ghcr.io/jinyoung/food-delivery6/front:v0-0-2"
+          image: "ghcr.io/kimsanghoon1/fooddelivery/front:v0-0-8"
           ports: 
             - 
               containerPort: 8080
@@ -68,7 +68,7 @@ spec:
       containers: 
         - 
           name: "store"
-          image: "ghcr.io/jinyoung/food-delivery6/store:v0-0-2"
+          image: "ghcr.io/kimsanghoon1/fooddelivery/store:v0-0-8"
           ports: 
             - 
               containerPort: 8080
@@ -113,7 +113,7 @@ spec:
       containers: 
         - 
           name: "rider"
-          image: "ghcr.io/jinyoung/food-delivery6/rider:v0-0-2"
+          image: "ghcr.io/kimsanghoon1/fooddelivery/rider:v0-0-8"
           ports: 
             - 
               containerPort: 8080
@@ -158,7 +158,7 @@ spec:
       containers: 
         - 
           name: "customer"
-          image: "ghcr.io/jinyoung/food-delivery6/customer:v0-0-2"
+          image: "ghcr.io/kimsanghoon1/fooddelivery/customer:v0-0-8"
           ports: 
             - 
               containerPort: 8080

@@ -41,8 +41,8 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/${{ github.repository }}/front:latest
-            ghcr.io/${{ github.repository }}/front:${{ github.ref_name }}
+            ghcr.io/${{ github.repository }}-front:latest
+            ghcr.io/${{ github.repository }}-front:${{ github.ref_name }}
             
       - name: Docker Build and push for Store
         uses: docker/build-push-action@v4
@@ -51,8 +51,8 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/${{ github.repository }}/store:latest
-            ghcr.io/${{ github.repository }}/store:${{ github.ref_name }}
+            ghcr.io/${{ github.repository }}-store:latest
+            ghcr.io/${{ github.repository }}-store:${{ github.ref_name }}
             
       - name: Docker Build and push for Rider
         uses: docker/build-push-action@v4
@@ -61,8 +61,8 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/${{ github.repository }}/rider:latest
-            ghcr.io/${{ github.repository }}/rider:${{ github.ref_name }}
+            ghcr.io/${{ github.repository }}-rider:latest
+            ghcr.io/${{ github.repository }}-rider:${{ github.ref_name }}
             
       - name: Docker Build and push for Customer
         uses: docker/build-push-action@v4
@@ -71,6 +71,6 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/${{ github.repository }}/customer:latest
-            ghcr.io/${{ github.repository }}/customer:${{ github.ref_name }}
+            ghcr.io/${{ github.repository }}-customer:latest
+            ghcr.io/${{ github.repository }}-customer:${{ github.ref_name }}
             
